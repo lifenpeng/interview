@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>三栏布局 中间自适应</title>
+  <style media="screen">
+    html *{
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .layout {
+      margin-top: 20px;
+    }
+
+    .layout article div {
+      min-height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <style media="screen">
+    .layout.float .left{
+      float: left;
+      width: 300px;
+      background: red;
+    }
+    .layout.float .right{
+      float: right;
+      width: 300px;
+      background: blue;
+    }
+    .layout.float .center {
+      background: pink;
+    }
+  </style>
+  <section class="layout float">
+    <article class="left-right-center">
+      <div class="left"></div>
+      <div class="right">
+      </div>
+      <div class="center">
+        已知高度，实现一个三栏布局，左右宽分别为300px，中间为自适应
+        <h1>解决1：通过float</h1>
+      </div>
+    </article>
+  </section>
+
+  <style media="screen">
+    .layout.absolute .left-center-right>div{
+      position: absolute;
+    }
+    .layout.absolute .left {
+      width: 300px;
+      left:0px;
+      background: red;
+    }
+    .layout.absolute .center {
+      left: 300px;
+      right: 300px;
+      background: pink;
+    }
+    .layout.absolute .right {
+      width: 300px;
+      right: 0px;
+      background: blue;
+    }
+  </style>
+  <section class="layout absolute">
+    <article class="left-center-right">
+      <div class="left"></div>
+      <div class="center">
+        已知高度，实现一个三栏布局，左右宽分别为300px，中间为自适应
+        <h1>解决2：通过absolute</h1>
+      </div>
+      <div class="right"></div>
+    </article>
+  </section>
+
+  <!-- Flex是Flexible Box的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性 -->
+  <style media="screen">
+    .layout.flexbox .left-center-right {
+      margin-top: 350px;
+      display: flex;
+    }
+    .layout.flexbox .left{
+      width: 300px;
+      background: red;
+    }
+    .layout.flexbox .center {
+      flex: 1;
+      background: pink;
+    }
+    .layout.flexbox .right {
+      width: 300px;
+      background: blue;
+    }
+  </style>
+  <section class="layout flexbox">
+    <article class="left-center-right">
+      <div class="left"></div>
+      <div class="center">
+        已知高度，实现一个三栏布局，左右宽分别为300px，中间为自适应
+        <h1>解决3：通过flexbox</h1>
+      </div>
+      <div class="right"></div>
+    </article>
+  </section>
+
+  <style>
+    .layout.table .left-center-right {
+      width: 100%;
+      display: table;
+    }
+    .layout.table .left-center-right>div{
+      display: table-cell;
+      height: 300px;
+    }
+    .layout.table .left{
+      width: 300px;
+      background: red;
+    }
+    .layout.table .center {
+      background: pink;
+    }
+    .layout.table .right {
+      width: 300px;
+      background: blue;
+    }
+  </style>
+  <section class="layout table">
+    <article class="left-center-right">
+      <div class="left"></div>
+      <div class="center">
+        已知高度，实现一个三栏布局，左右宽分别为300px，中间为自适应
+        <h1>解决4：通过table 表格布局</h1>
+      </div>
+      <div class="right"></div>
+    </article>
+  </section>
+
+  <style media="screen">
+    .layout.grid .left-center-right {
+      display: grid;
+      width: 100%;
+      grid-template-roes:300px;
+      grid-template-columns: 300px auto 300px;
+    }
+    .layout.grid .left {
+      background: red;
+    }
+    .layout.grid .center {
+      background: pink;
+    }
+    .layout.grid .right {
+      background: blue;
+    }
+  </style>
+  <section class="layout grid">
+    <article class="left-center-right">
+      <div class="left"></div>
+      <div class="center">
+        已知高度，实现一个三栏布局，左右宽分别为300px，中间为自适应
+        <h1>解决5：通过table 网格布局</h1>
+      </div>
+      <div class="right"></div>
+    </article>
+  </section>
+</body>
+</html>
