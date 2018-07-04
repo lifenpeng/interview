@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    html *{
+      padding: 0px;
+      margin: 0px;
+    }
+    .layout,.top-center-bottom{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <style media="screen">
+    .layout.grid .top-center-bottom {
+      display: grid;
+      grid-template-columns: 100%; /* 水平排列个数 宽度 */
+      grid-template-rows: 100px auto 100px; /* 垂直排列个数 高度 */
+    }
+    .layout.grid .top {
+      background: red;
+    }
+    .layout.grid .center {
+      background: pink;
+    }
+    .layout.grid .bottom {
+      background: blue;
+    }
+  </style>
+  <section class="layout grid">
+    <article class="top-center-bottom">
+      <div class="top">top</div>
+      <div class="center">
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+      </div>
+      <div class="bottom">bottom</div>
+    </article>
+  </section>
+</body>
+</html>
