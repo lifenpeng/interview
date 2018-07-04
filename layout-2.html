@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    html *{
+      padding: 0px;
+      margin: 0px;
+    }
+    .layout,.top-center-bottom{
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <style media="screen">
+    .layout.absolute .top-center-bottom {
+      position: absolute;
+    }
+    .layout.absolute .top {
+      top:0px;
+      background: red;
+      height: 300px;
+    }
+    .layout.absolute .center {
+      top:300px;
+      bottom: 300px;
+      background: pink;
+    }
+    .layout.absolute .bottom {
+      bottom: 0px;
+      background: blue;
+      height: 300px;
+    }
+  </style>
+  <section class="layout absolute">
+    <article class="top-center-bottom">
+      <div class="top"></div>
+      <div class="center">
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+        <h1>top bottom 高度固定 center 高度自适应</h1>
+      </div>
+      <div class="bottom"></div>
+    </article>
+  </section>
+</body>
+</html>
